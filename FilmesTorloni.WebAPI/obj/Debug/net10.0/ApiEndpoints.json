@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "FilmesTorloni.WebAPI.Controllers.GeneroController",
+    "Method": "Post",
+    "RelativePath": "api/Genero",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "novoGenero",
+        "Type": "FilmesTorloni.WebAPI.Models.Genero",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
