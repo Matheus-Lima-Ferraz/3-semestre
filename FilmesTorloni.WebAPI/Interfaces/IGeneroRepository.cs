@@ -10,4 +10,5 @@ public interface IGeneroRepository
     List<Genero> Listar();
     void Deletar(Guid id);
     Genero BuscarPorId(Guid id);
+    void AtualizarIdUrl(Guid id, object generoAtualizado);
 }

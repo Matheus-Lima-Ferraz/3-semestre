@@ -7,7 +7,8 @@ using Microsoft.EntityFrameworkCore;
 namespace FilmesTorloni.WebAPI.Models;
 
 [Table("Usuario")]
-[Index("Email", Name = "UQ__Usuario__A9D10534FBBE7C16", IsUnique = true)]
+[Index("Email", Name = "UQ_Usuario_Email", IsUnique = true)]
+[Index("Email", Name = "UQ__Usuario__A9D105348BC6F8E0", IsUnique = true)]
 public partial class Usuario
 {
     [Key]
