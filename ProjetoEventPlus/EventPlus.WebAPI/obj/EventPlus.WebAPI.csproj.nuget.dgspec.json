@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\56344067810\\Desktop\\3-semestre\\EventPlus1\\ProjetoEventPlus\\Event+\\EventPlus.WebAPI\\EventPlus.WebAPI.csproj": {}
+    "C:\\Users\\56344067810\\Desktop\\3-semestre\\ProjetoEventPlus\\EventPlus.WebAPI\\EventPlus.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\56344067810\\Desktop\\3-semestre\\EventPlus1\\ProjetoEventPlus\\Event+\\EventPlus.WebAPI\\EventPlus.WebAPI.csproj": {
+    "C:\\Users\\56344067810\\Desktop\\3-semestre\\ProjetoEventPlus\\EventPlus.WebAPI\\EventPlus.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\56344067810\\Desktop\\3-semestre\\EventPlus1\\ProjetoEventPlus\\Event+\\EventPlus.WebAPI\\EventPlus.WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\56344067810\\Desktop\\3-semestre\\ProjetoEventPlus\\EventPlus.WebAPI\\EventPlus.WebAPI.csproj",
         "projectName": "EventPlus.WebAPI",
-        "projectPath": "C:\\Users\\56344067810\\Desktop\\3-semestre\\EventPlus1\\ProjetoEventPlus\\Event+\\EventPlus.WebAPI\\EventPlus.WebAPI.csproj",
+        "projectPath": "C:\\Users\\56344067810\\Desktop\\3-semestre\\ProjetoEventPlus\\EventPlus.WebAPI\\EventPlus.WebAPI.csproj",
         "packagesPath": "C:\\Users\\56344067810\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\56344067810\\Desktop\\3-semestre\\EventPlus1\\ProjetoEventPlus\\Event+\\EventPlus.WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\56344067810\\Desktop\\3-semestre\\ProjetoEventPlus\\EventPlus.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,10 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
+            "Azure.AI.ContentSafety": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.1.0, )"

@@ -32,15 +32,17 @@ public class LoginController : ControllerBase
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            Usuario usuario = _usuarioRepository.BuscarPorEmailESenha(loginDTO.Email!, loginDTO.Senha!);
+            Usuario usuarioBuscado = _usuarioRepository.BuscarPorEmailESenha(loginDTO.Email!, loginDTO.Senha!);
 
-            if (usuario == null)
+            if (usuarioBuscado == null)
                 return Unauthorized("Usuário não encontrado");
 
             var claims = new[]
             {
-                new Claim(JwtRegisteredClaimNames.Jti, usuario.IdUsuario.ToString()),
-                new Claim(JwtRegisteredClaimNames.Email, usuario.Email ?? string.Empty),
+                new Claim(JwtRegisteredClaimNames.Email, usuarioBuscado.Email!),
+                new Claim(JwtRegisteredClaimNames.Name, usuarioBuscado.Nome!),
+                new Claim(JwtRegisteredClaimNames.Jti, usuarioBuscado.IdUsuario.ToString()),
+                new Claim(ClaimTypes.Role, usuarioBuscado.IdTipoUsuarioNavigation!.Titulo!),
             };
 
             var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("EventPlus-chave-autenticacao-webapi-dev"));
