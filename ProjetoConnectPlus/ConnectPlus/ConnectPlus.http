@@ -1,0 +1,6 @@
+@ConnectPlus_HostAddress = http://localhost:5137
+
+GET {{ConnectPlus_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
